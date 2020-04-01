@@ -1,0 +1,8 @@
+<input id="inn_body" type="number">
+<button  id="inn_check_btn">Проверить ИНН</button>
+
+<table class="table" id="inns_table">
+    <%= for %{:check => check, :date => date, :inn => inn } <- @inns_list do %>
+        <tr><td><%= "#{date}" %></td><td><%= "#{inn}" %></td><td><%= "#{check}" %></td></tr>
+    <% end %>
+</table>
