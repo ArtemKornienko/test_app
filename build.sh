@@ -12,11 +12,4 @@ npm run deploy --prefix ./assets
 mix phx.digest
 
 # Build the release and overwrite the existing release directory
-cd _build/prod/rel/test_app/bin/
-test_app eval "TestApp.Release.migrate"
-cd..
-cd..
-cd..
-cd..
-cd..
 MIX_ENV=prod mix release --overwrite
