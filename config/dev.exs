@@ -16,7 +16,7 @@ config :test_app, TestApp.Repo,
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :test_app, TestAppWeb.Endpoint,
-  http: [port: 4003],
+  http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
